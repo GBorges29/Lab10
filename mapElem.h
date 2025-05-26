@@ -17,11 +17,12 @@
 #pragma once
 
 #include <stdbool.h>
+#include "stringWrap.h" // ADICIONADO
 
-/** Key type definition. Change according to the use-case. */
-typedef int MapKey;
+/** Key type definition. Alterado para StringWrap */
+typedef StringWrap MapKey;
 
-/** Value type definition. Change according to the use-case. */
+/** Value type definition. Mantém-se como int */
 typedef int MapValue;
 
 /**
@@ -57,4 +58,3 @@ void mapValuePrint(MapValue value);
  * @return value greater than 0 if 'key1' is greater than 'key2' 
  */
 int mapKeyCompare(MapKey key1, MapKey key2);
-

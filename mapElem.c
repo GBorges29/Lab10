@@ -11,14 +11,13 @@
 #include <string.h>
 
 void mapKeyPrint(MapKey key) {
-	printf("%d \n", key);
+    printf("%s", key.text);
 }
 
 void mapValuePrint(MapValue value) {
-	printf("%d \n", value);
+    printf("%d", value);
 }
 
 int mapKeyCompare(MapKey key1, MapKey key2) {
-	// in case of integer keys:
-	return (key1 - key2); 
+    return strcmp(key1.text, key2.text);
 }
